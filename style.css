@@ -1,0 +1,733 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+#header {
+  background-color: black;
+  position: relative;
+}
+#header .back {
+  z-index: 0;
+  padding: 40px 0px;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 640px auto;
+  background-position: 90% 0%;
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/hero_02.jpg);
+}
+#header .logo a {
+  display: inline-block;
+  padding-top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+#header .navbar ul li {
+  position: relative;
+  list-style: none;
+  padding: 80px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+}
+#header .navbar ul li:first-child::before {
+  width: 30%;
+}
+#header .navbar ul li:hover::before {
+  width: 30%;
+}
+#header .navbar ul li::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  height: 2px;
+  width: 0%;
+  transition: 0.3s ease-in-out;
+  background-color: #e9204f;
+}
+#header .line {
+  margin: 50px 100px;
+  height: 3px;
+  width: 5%;
+  background-color: #e9204f;
+}
+#header .digital {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  left: 50px;
+  z-index: 2;
+}
+#header .digital button {
+  border-radius: 2px solid;
+  border-color: #e9204f;
+  width: 18%;
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 50px;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+#header .digital button:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+#header .digital button::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e9204f;
+  transition: 0.5s ease-in-out;
+}
+#header .boxes {
+  position: relative;
+  top: 40px;
+}
+#header .boxes .box1 {
+  background-color: #e9204f;
+}
+#header .boxes .box1 .i1 {
+  color: white;
+}
+#header .boxes .box2::before {
+  content: "";
+  background-color: #e9204f;
+  height: 50px;
+  width: 2px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  z-index: -1;
+}
+#header .boxes .box3 {
+  position: relative;
+}
+#header .boxes .box3::after {
+  top: 90%;
+  content: "";
+  background-color: #e9204f;
+  height: 70px;
+  width: calc(100% + 23px);
+  position: absolute;
+  z-index: -1;
+}
+#header .boxes div {
+  margin-top: 300px;
+  width: 30%;
+  padding: 180px 0px;
+  background-color: #1b1b1b;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+#header .boxes div:hover {
+  background-color: #e9204f;
+}
+#header .boxes h3 {
+  padding: 10px 15px;
+  position: absolute;
+  font-size: 25px;
+}
+#header .boxes p {
+  position: absolute;
+  padding: 80px 15px;
+}
+#header .boxes i {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 50px;
+  color: white;
+}
+
+#services .words {
+  margin-top: 100px;
+  line-height: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#services .words h1 {
+  font-size: 50px;
+}
+#services .words p {
+  color: #e9204f;
+  margin-top: 20px;
+}
+#services .boxes1 div {
+  padding: 40px 0;
+  background-color: #f3f3f3;
+  width: 30%;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+#services .boxes1 div:hover p {
+  transform: translateX(50px);
+}
+#services .boxes1 div:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+#services .boxes1 div::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e9204f;
+  transition: 0.2s ease-in-out;
+}
+#services .boxes1 div p {
+  margin-left: 40px;
+  transition: 0.3s ease-in-out;
+}
+#services .boxes1 div i {
+  position: relative;
+  left: 40%;
+  color: #1b1b1b;
+}
+#services .boxes2 div {
+  padding: 40px 0;
+  background-color: #f3f3f3;
+  width: 30%;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+}
+#services .boxes2 div:hover p {
+  transform: translateX(50px);
+}
+#services .boxes2 div:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+#services .boxes2 div::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e9204f;
+  transition: 0.2s ease-in-out;
+}
+#services .boxes2 div p {
+  margin-left: 40px;
+  transition: 0.3s ease-in-out;
+}
+#services .boxes2 div i {
+  position: relative;
+  left: 40%;
+  color: #1b1b1b;
+}
+#services .boxes3 div {
+  padding: 40px 0;
+  background-color: #f3f3f3;
+  width: 30%;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+}
+#services .boxes3 div:hover p {
+  transform: translateX(50px);
+}
+#services .boxes3 div:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+#services .boxes3 div::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e9204f;
+  transition: 0.2s ease-in-out;
+}
+#services .boxes3 div p {
+  margin-left: 40px;
+  transition: 0.3s ease-in-out;
+}
+#services .boxes3 div i {
+  position: relative;
+  left: 40%;
+  color: #1b1b1b;
+}
+
+#works .container {
+  margin-top: 100px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#works .container h1 {
+  font-size: 60px;
+}
+#works .container p {
+  color: #e9204f;
+  margin-top: 20px;
+}
+#works .container button {
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px solid #e9204f;
+  width: 140px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+#works .container button:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+#works .container button::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e9204f;
+  transition: 0.5s ease-in-out;
+}
+
+#interior .boxes .box1 {
+  background-position: 50% 50%;
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/03-min-1-1024x683.jpg);
+  background-size: cover;
+  margin-top: 50px;
+  width: 33%;
+  padding: 200px 0;
+  filter: grayscale(100%);
+}
+#interior .boxes .box1:hover {
+  filter: grayscale(0%);
+}
+#interior .boxes .box1:hover h3 {
+  transform: translateX(20px);
+  visibility: visible;
+}
+#interior .boxes .box1:hover p {
+  transform: translateX(20px);
+  visibility: visible;
+}
+#interior .boxes .box1 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  visibility: hidden;
+  transition: 0.1s ease-in-out;
+}
+#interior .boxes .box1 p {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  visibility: hidden;
+  transition: 0.1s ease-in-out;
+}
+#interior .boxes .box2 {
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/04-min-1-1024x683.jpg);
+  background-size: cover;
+  margin-top: 50px;
+  width: 33%;
+  padding: 200px 0;
+  filter: grayscale(100%);
+}
+#interior .boxes .box2:hover {
+  filter: grayscale(0%);
+}
+#interior .boxes .box2:hover h3 {
+  transform: translateX(20px);
+  visibility: visible;
+}
+#interior .boxes .box2:hover p {
+  transform: translateX(20px);
+  visibility: visible;
+}
+#interior .boxes .box2 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  visibility: hidden;
+  transition: 0.1s ease-in-out;
+}
+#interior .boxes .box2 p {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  visibility: hidden;
+  transition: 0.1s ease-in-out;
+}
+#interior .boxes .box3 {
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/07-min-1024x683.jpg);
+  background-size: cover;
+  margin-top: 50px;
+  width: 33%;
+  padding: 200px 0;
+  filter: grayscale(100%);
+}
+#interior .boxes .box3:hover {
+  filter: grayscale(0%);
+}
+#interior .boxes .box3:hover h3 {
+  transform: translateX(20px);
+  visibility: visible;
+}
+#interior .boxes .box3:hover p {
+  transform: translateX(20px);
+  visibility: visible;
+}
+#interior .boxes .box3 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  visibility: hidden;
+  transition: 0.1s ease-in-out;
+}
+#interior .boxes .box3 p {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  visibility: hidden;
+  transition: 0.1s ease-in-out;
+}
+
+.red {
+  margin: 50px auto;
+  padding: 30px 0px;
+  width: 2px;
+  background-color: #e9204f;
+}
+
+#about div {
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#about div h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+#about div .p1 {
+  color: #e9204f;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#about div .p2 {
+  color: grey;
+}
+
+#team .boxes {
+  margin-top: 100px;
+}
+#team .boxes .box1 {
+  filter: grayscale(100%);
+  transition: 0.2s ease-in-out;
+  padding: 300px 0px;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/about_01.jpg);
+}
+#team .boxes .box1:hover {
+  filter: grayscale(0%);
+}
+#team .boxes .box2 {
+  filter: grayscale(100%);
+  transition: 0.2s ease-in-out;
+  width: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/about_03.jpg);
+}
+#team .boxes .box2:hover {
+  filter: grayscale(0%);
+}
+
+#who {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+}
+#who p {
+  color: grey;
+  margin-top: 20px;
+}
+
+#clients .div1 {
+  background-size: cover;
+  width: 30%;
+  padding: 300px 0px;
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/client_01.jpg);
+}
+#clients .div2 {
+  width: 60%;
+  padding: 100px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+#clients .div2::after {
+  content: "";
+  background-color: #e9204f;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 90%;
+  left: -18%;
+  z-index: -1;
+}
+#clients .div2 h1 {
+  font-size: 50px;
+}
+#clients .div2 h3 {
+  margin-top: 30px;
+  color: #e9204f;
+  font-size: 20px;
+}
+#clients .div2 .p1 {
+  margin-top: 80px;
+  color: grey;
+  font-size: 25px;
+}
+#clients .div2 .p2 {
+  position: absolute;
+  font-weight: bold;
+  top: 90%;
+}
+#clients .img {
+  margin-top: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(norton.png);
+  padding: 100px 0;
+  width: 100%;
+  position: relative;
+}
+#clients .img::before {
+  content: "";
+  background-color: #e9204f;
+  height: 50px;
+  width: 2px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  z-index: -1;
+}
+#clients .news {
+  margin-top: 100px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#clients .news h1 {
+  font-size: 40px;
+}
+#clients .news p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #e9204f;
+  margin-top: 20px;
+}
+
+#careers .boxes {
+  margin-top: 100px;
+}
+#careers .boxes div {
+  width: 33%;
+  padding: 200px 0px;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  filter: grayscale(100%);
+}
+#careers .boxes div:hover {
+  filter: grayscale(0%);
+}
+#careers .boxes div:hover p {
+  transform: translateY(-50px);
+}
+#careers .boxes div:hover h1 {
+  transform: translateY(-50px);
+}
+#careers .boxes div p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bolder;
+  position: relative;
+  top: 120px;
+}
+#careers .boxes div h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bolder;
+  position: relative;
+  top: 150px;
+}
+#careers .boxes .box1 {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/01-min.jpg);
+}
+#careers .boxes .box2 {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/03-min.jpg);
+}
+#careers .boxes .box3 {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/05-min.jpg);
+}
+
+#footer {
+  margin-top: 100px;
+}
+#footer .boxes1 {
+  background-color: #1b1b1b;
+  width: 100%;
+  padding: 120px 0;
+}
+#footer .boxes1 i {
+  font-size: 40px;
+  color: #e9204f;
+  padding: 0px 10px;
+}
+#footer .boxes1 h1 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+#footer .boxes1 button {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #e9204f;
+  padding: 20px 50px;
+  background-color: #1b1b1b;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+#footer .boxes1 button:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+#footer .boxes1 button::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e9204f;
+  transition: 0.3s ease-in-out;
+}
+#footer .boxes2 {
+  width: 100%;
+  background-color: #161616;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+#footer .boxes3 {
+  width: 100%;
+  background-color: #000;
+  padding: 30px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+#footer .boxes3 .box2 ul li {
+  padding: 0 20px;
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+}
+#footer .boxes3 .box2 ul li:hover::before {
+  width: 30%;
+}
+#footer .boxes3 .box2 ul li::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 2px;
+  width: 0%;
+  transition: 0.3s ease-in-out;
+  background-color: #e9204f;
+}/*# sourceMappingURL=style.css.map */
