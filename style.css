@@ -117,6 +117,8 @@
 #header .boxes {
   position: relative;
   top: 40px;
+  width: 90%;
+  margin: auto;
 }
 #header .boxes .box1 {
   background-color: #e9204f;
@@ -148,7 +150,7 @@
 }
 #header .boxes div {
   margin-top: 300px;
-  width: 30%;
+  width: 32%;
   padding: 180px 0px;
   background-color: #1b1b1b;
   position: relative;
@@ -199,6 +201,7 @@
   margin-top: 100px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 #services .boxes1 div:hover p {
   transform: translateX(50px);
@@ -238,6 +241,7 @@
   margin-top: 40px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 #services .boxes2 div:hover p {
   transform: translateX(50px);
@@ -277,6 +281,7 @@
   margin-top: 40px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 #services .boxes3 div:hover p {
   transform: translateX(50px);
@@ -428,6 +433,7 @@
   margin-top: 50px;
   width: 33%;
   padding: 200px 0;
+  overflow: hidden;
   filter: grayscale(100%);
 }
 #interior .boxes .box3:hover {
@@ -487,6 +493,20 @@
 
 #team .boxes {
   margin-top: 100px;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+#team .boxes h1 {
+  top: 80%;
+  left: 5%;
+  position: absolute;
+}
+#team .boxes p {
+  position: absolute;
+  top: 90%;
+  left: 5%;
 }
 #team .boxes .box1 {
   filter: grayscale(100%);
@@ -622,6 +642,7 @@
   font-weight: bolder;
   position: relative;
   top: 120px;
+  transition: 0.3s ease-in-out;
 }
 #careers .boxes div h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -629,6 +650,7 @@
   font-weight: bolder;
   position: relative;
   top: 150px;
+  transition: 0.3s ease-in-out;
 }
 #careers .boxes .box1 {
   background-position: 50% 50%;
