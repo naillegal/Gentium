@@ -191,7 +191,7 @@
   margin-top: 20px;
 }
 #services .boxes1 div {
-  padding: 40px 0;
+  padding: 30px 0;
   background-color: #f3f3f3;
   width: 30%;
   color: #000;
@@ -222,16 +222,17 @@
   transition: 0.2s ease-in-out;
 }
 #services .boxes1 div p {
-  margin-left: 40px;
   transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-around;
 }
 #services .boxes1 div i {
-  position: relative;
-  left: 40%;
+  margin-right: 30px;
+  margin-top: 5px;
   color: #1b1b1b;
 }
 #services .boxes2 div {
-  padding: 40px 0;
+  padding: 30px 0;
   background-color: #f3f3f3;
   width: 30%;
   color: #000;
@@ -262,16 +263,17 @@
   transition: 0.2s ease-in-out;
 }
 #services .boxes2 div p {
-  margin-left: 40px;
+  display: flex;
+  justify-content: space-around;
   transition: 0.3s ease-in-out;
 }
 #services .boxes2 div i {
-  position: relative;
-  left: 40%;
+  margin-right: 30px;
+  margin-top: 5px;
   color: #1b1b1b;
 }
 #services .boxes3 div {
-  padding: 40px 0;
+  padding: 30px 0;
   background-color: #f3f3f3;
   width: 30%;
   color: #000;
@@ -302,12 +304,13 @@
   transition: 0.2s ease-in-out;
 }
 #services .boxes3 div p {
-  margin-left: 40px;
+  display: flex;
+  justify-content: space-around;
   transition: 0.3s ease-in-out;
 }
 #services .boxes3 div i {
-  position: relative;
-  left: 40%;
+  margin-right: 30px;
+  margin-top: 5px;
   color: #1b1b1b;
 }
 
